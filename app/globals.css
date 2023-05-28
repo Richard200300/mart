@@ -2,26 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.unimart-logo {
+  width: 170px;
+}
+.navbar {
+  background: #ffffff;
+  box-shadow: 0px 2px 50px rgba(51, 0, 255, 0.11);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6%;
+}
+.navbar-search {
+  border: none;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid #3300ff;
+  font-size: 12px;
+}
+.nav-input-search-cont {
+  width: 40vw;
+  position: relative;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+  border-radius: 5px;
+}
+.nav-search-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.nav-logincont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+.navlogin {
+border: 2px solid #3300FF;
+padding: 5px 14px;
+border-radius: 5px;
+font-weight: 500;
+color: #3300FF;
+cursor: pointer;
+font-size: 12px;
+}
+.navsignup {
+  background-color: #3300FF;
+padding: 5px 14px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+color: #ffffff;
+display: flex;
+gap: 5px
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 70px;
+}
+.herosellcont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  border: 2px solid #FF5208;
+  border-radius: 5px;
+ padding: 5px 10px;
+ cursor: pointer;
+}
+.herosellcont p{
+  color: #FF5208;
+  font-weight: 500;
+}
+.hero-btn-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.unimartheroicon {
+  width: 370px;
+}
+.footer-container {
+  background-color: #3300FF;
+  width: 100%;
+  color: #ffffff;
+}
+.svgfooterimgs-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svgfooterimgs {
+width: 70vw;
+}
+.footerinfocont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9%;
+}
+.footer-social-mediaicons {
+  display: flex;
+  gap: 10px;
 }
