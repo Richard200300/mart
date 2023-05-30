@@ -1,27 +1,26 @@
 import Image from "next/image";
+import services from "../public/assets/svgicons/Services.svg";
 import trendinglocation from "../public/assets/svgicons/trendinglocation.svg";
 import bookmark from "../public/assets/svgicons/bookmark.svg";
-import TrendingAds from "../public/assets/svgicons/TrendingAds.svg";
-import trendingadsdata from "../data/trendingaddata";
+import servicesdata from "../data/servicesdata";
 import gas from "../public/assets/images/gascylinder.jpg";
 
-
-const Trendingads = () => {
+const Services = () => {
   return (
     <div className="listingcontt">
       <div className="trendingadtextcontainer">
         <div className="trendingadborder"></div>
-        <Image src={TrendingAds} className="TrendingAds" />
+        <Image src={services} alt="services" />
         <div className="trendingadborder"></div>
       </div>
       <div className="trendingadscont">
-        {trendingadsdata.map((data) => {
+        {servicesdata.map((data) => {
           return (
             <div>
               <div className="trendingadsbox">
                 <Image src={gas} alt="gas" className="ad-img" />
-                <p className="box-minicategory">Kitchen appliance</p>
-                <Image src={bookmark} alt="bookmark" className="bookmark" />
+                <p className="box-minicategory">{data.category}</p>
+                <Image src={bookmark} alt="bookmark" className="servicesbookmark"/>
                 <div className="productinfo">
                   <Image
                     src={trendinglocation}
@@ -30,7 +29,6 @@ const Trendingads = () => {
                   />
                   <div>
                     <p className="productname"> {data.productname}</p>
-                    <p className="productprice">₦ {data.productprice}</p>
                     <div className="universitycont">
                       <p> {data.university}</p>
                       <p>{data.uniabbreviation}</p>
@@ -46,4 +44,4 @@ const Trendingads = () => {
   );
 };
 
-export default Trendingads;
+export default Services;

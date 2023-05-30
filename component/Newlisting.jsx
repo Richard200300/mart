@@ -1,21 +1,20 @@
 import Image from "next/image";
+import listing from "../public/assets/svgicons/listings.svg";
 import trendinglocation from "../public/assets/svgicons/trendinglocation.svg";
 import bookmark from "../public/assets/svgicons/bookmark.svg";
 import TrendingAds from "../public/assets/svgicons/TrendingAds.svg";
 import trendingadsdata from "../data/trendingaddata";
 import gas from "../public/assets/images/gascylinder.jpg";
-
-
-const Trendingads = () => {
+const Newlisting = () => {
   return (
     <div className="listingcontt">
       <div className="trendingadtextcontainer">
         <div className="trendingadborder"></div>
-        <Image src={TrendingAds} className="TrendingAds" />
+        <Image src={listing} alt="listing" />
         <div className="trendingadborder"></div>
       </div>
       <div className="trendingadscont">
-        {trendingadsdata.map((data) => {
+        {trendingadsdata.slice(0, 4).map((data) => {
           return (
             <div>
               <div className="trendingadsbox">
@@ -46,4 +45,4 @@ const Trendingads = () => {
   );
 };
 
-export default Trendingads;
+export default Newlisting;
