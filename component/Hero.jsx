@@ -6,9 +6,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="hero-container">
-      <Image src={unimartheroicon} alt="unimartheroicon" className="unimartheroicon" />
-      <div>
-        <Image src={herotext} alt="herotext"className="unimartheroicon" />
+      <Image src={unimartheroicon} alt="unimartheroicon" className="unimartheroicon animate" />
+      <div className="animateconnect">
+        <Image src={herotext} alt="herotext"className="unimartheroicoectn " />
         <div className="hero-btn-cont">
         <div className="herosellcont">
           <Image src={herosell} alt="herosell" />

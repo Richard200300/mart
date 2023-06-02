@@ -93,6 +93,63 @@
 }
 .unimartheroicon {
   width: 370px;
+  transition: all 0.3s;
+}
+.animate {
+  position: relative;
+  animation-name: heroimg;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.animateconnect{
+  position: relative;
+  animation-name: animeconnect;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animeconnect  {
+  0% {
+    position: relative;
+    left: 400px;
+  }
+
+ 
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes heroimg {
+  0% {
+    transform: rotate(60deg);
+    position: relative;
+    right: 400px;
+  }
+  /* 20% {
+    transform: rotate(120deg);
+    position: relative;
+    right: 300px;
+  }
+  40% {
+    transform: rotate(180deg);
+    right: 200px;
+  }
+  60% {
+    transform: rotate(240deg);
+    right: 100px;
+  }
+  80% {
+    transform: rotate(300deg);
+    right: 50px;
+  } */
+  100% {
+    transform: rotate(360deg);
+    right: 0px;
+  }
 }
 .category-container {
   width: 90vw;
@@ -119,12 +176,11 @@
 }
 .leftcategory {
   left: -18px;
-} 
+}
 .electronics {
   margin-top: 20px;
 }
-.electronics
-.mobile,
+.electronics .mobile,
 .electronics,
 .furniture,
 .beauty,
@@ -151,6 +207,7 @@
   margin-block: 20px;
   padding: 0px 18%;
 }
+
 .trendingadscont {
   display: grid;
   padding: 10px 6%;
