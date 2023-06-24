@@ -9,7 +9,10 @@ import Newlisting from "@/component/Newlisting";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
+    <div className="nav">
+    <Navbar />
+
+    </div>
       <Hero />
       <Category />
       <Trendingads />
