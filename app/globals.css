@@ -114,7 +114,7 @@
 @keyframes animeconnect  {
   0% {
     position: relative;
-    left: 400px;
+    left: 900px;
   }
 
  
@@ -330,4 +330,9 @@
 .foot-c {
   display: flex;
   gap: 10px;
+}
+
+
+@media (max-width: 900p {
+  
 }
