@@ -422,13 +422,14 @@ gap: unset;
   .nav-logincont {
     display: none;
   }
-  .bookmark {
-    position: absolute;
-    right: 9px;
-    top: 11vh;
-    width: 25px;
-    z-index: 3;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.29);
+  .bookmark, .servicesbookmark {
+   top: unset;
+   bottom: 54px;
+   width: 24px;
+   right: 9px;
+  }
+  .servicesbookmark {
+    bottom: 30px;
   }
 .productinfo {
   padding: 3px 15px;
