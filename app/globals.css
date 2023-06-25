@@ -7,6 +7,12 @@
   margin: 0px;
   padding: 0px;
 }
+html {
+  scroll-snap-type: x mandatory;
+}
+.home-cat {
+  scroll-snap-align: start;
+}
 .unimart-logo {
   width: 170px;
 }
@@ -17,18 +23,15 @@
   z-index: 4;
 }
 .main-nav {
-
   background: #ffffff;
   box-shadow: 0px 2px 50px rgba(51, 0, 255, 0.11);
   border-radius: 5px;
   padding: 10px 6%;
 }
 .navbar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .navbar-search {
   border: none;
@@ -40,7 +43,8 @@
   border-bottom: 2px solid #3300ff;
   font-size: 12px;
 }
-.nav-input-search-cont, .nav-input-search-cont1 {
+.nav-input-search-cont,
+.nav-input-search-cont1 {
   width: 40vw;
   position: relative;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
@@ -119,7 +123,7 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
-.animateconnect{
+.animateconnect {
   position: relative;
   animation-name: animeconnect;
   animation-duration: 4s;
@@ -127,13 +131,12 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
-@keyframes animeconnect  {
+@keyframes animeconnect {
   0% {
     position: relative;
     left: 900px;
   }
 
- 
   100% {
     right: 0px;
   }
@@ -179,7 +182,7 @@
   align-items: center;
   margin: 50px auto;
   width: 90vw;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
 }
 .rightcategory,
@@ -286,12 +289,10 @@
   font-weight: 600;
   font-size: 14px;
 
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides any overflowing text */
-    text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
-    width: 95%; /* Sets the width of the paragraph element */
-  
-  
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides any overflowing text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
+  width: 95%; /* Sets the width of the paragraph element */
 }
 .productprice {
   color: #000000;
@@ -360,38 +361,38 @@
   display: none;
   cursor: pointer;
 }
- 
+
 .nav-bar,
-  .bar-active {
-    width: 24px;
+.bar-active {
+  width: 24px;
   height: 3px;
   background-color: #3300ff;
   border-radius: 10px;
-  margin-block:5px;
+  margin-block: 5px;
   transition: all 0.3s ease-in-out;
 }
- 
 
-  .bar-active:nth-of-type(1) {
-    transform: rotate(50deg) translateY(-7px) translateX(5px);
-    width: 27px;
-  }
-  .bar-active:nth-of-type(2) {
-    display: none;
-  }
-  .bar-active:nth-of-type(3) {
-    transform: rotate(128deg) translateX(-12px);
-    width: 27px;
-  }
+.bar-active:nth-of-type(1) {
+  transform: rotate(50deg) translateY(-7px) translateX(5px);
+  width: 27px;
+}
+.bar-active:nth-of-type(2) {
+  display: none;
+}
+.bar-active:nth-of-type(3) {
+  transform: rotate(128deg) translateX(-12px);
+  width: 27px;
+}
 
-.showmenu, .showmenuactive {
+.showmenu,
+.showmenuactive {
   position: fixed;
-z-index: 5;
+  z-index: 5;
   top: 0px;
   right: -800px;
   width: 100%;
   height: 100vh;
-  background-color:rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
 .showmenuactive {
@@ -401,7 +402,7 @@ z-index: 5;
   width: 80%;
   height: 100%;
   margin-left: auto;
-  padding: 20% 10% ;
+  padding: 20% 10%;
   background-color: #ffffff;
 }
 .nav-logincont1 div {
@@ -433,10 +434,9 @@ z-index: 5;
     width: 100%;
     height: unset;
     height: 100%;
-
   }
   .hero-container {
-gap: unset;
+    gap: unset;
     justify-content: space-between;
     margin: 50px 6%;
   }
@@ -450,43 +450,58 @@ gap: unset;
 @media (max-width: 500px) {
   .hero-container {
     display: block;
-
   }
   .footer-social-mediaicons {
     display: none;
   }
   .navlogin {
     display: block;
-  } 
+  }
   .hambugger-nav {
     display: block;
   }
   .nav-logincont {
     display: none;
   }
-  .bookmark, .servicesbookmark {
-   top: unset;
-   bottom: 54px;
-   width: 24px;
-   right: 9px;
+  .bookmark,
+  .servicesbookmark {
+    top: unset;
+    bottom: 54px;
+    width: 24px;
+    right: 9px;
   }
   .servicesbookmark {
     bottom: 30px;
   }
-.productinfo {
-  padding: 3px 15px;
- }
- .productabbreviaton {
-  display: none;
- }
- .productuniversity {
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Hides any overflowing text */
-  text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
-  width: 83%;
 
- }
- .universitycont {
-  font-size: 8px;
- }
+  .productinfo {
+    padding: 3px 15px;
+  }
+  .productabbreviaton {
+    display: none;
+  }
+  .productuniversity {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides any overflowing text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
+    width: 83%;
+  }
+  .universitycont {
+    font-size: 8px;
+  }
+  .homepage-category {
+    gap: unset;
+    width: 20rem;
+    height: 20rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: unset;
+    scroll-snap-type: x mandatory;
+  }
+  .home-cat {
+    min-width: 20rem;
+    height: 20rem;
+    scale: unset;
+    scroll-snap-align: center;
+  }
 }
