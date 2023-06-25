@@ -13,7 +13,17 @@ const Navbar = () => {
     <section className="main-nav">
       <div className={tognav ? "showmenu" : "showmenuactive"}>
         <div className="mainshow">
-          
+        <div className="nav-logincont1">
+          <Link href="/login">
+            <div className="navlogin">Login in</div>
+          </Link>
+          <Link href="/signup">
+            <div className="navsignup">
+              <Image src={signupicon} alt="signupicon" />
+              Sign up
+            </div>
+          </Link>
+        </div>
         </div>
 
       </div>
