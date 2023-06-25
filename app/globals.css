@@ -408,6 +408,55 @@ html {
 .nav-logincont1 div {
   margin-block: 15px;
 }
+.loginpage {
+  display: flex;
+  font-family: sans-serif;
+
+}
+.logininfo {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainloginifo {
+  max-width: 40vw;
+}
+.signin-btn {
+  background-color:#3300ff;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 9px;
+}
+.mainloginifo input {
+  width: 100%;
+  margin-block: 10px;
+}
+.loginimg {
+  flex-basis: 65%;
+  height: 100vh;
+}
+.Signinimg {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.signintext {
+  font-size: 20px;
+  font-weight: 600;
+}
+.link-text {
+  font-size: 14px;
+}
+.su-link {
+  color:#3300ff;
+  margin-left: 10px;
+  text-decoration: none;
+}
 @media (max-width: 850px) {
   .nav-input-search-cont {
     display: none;
