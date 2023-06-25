@@ -30,8 +30,8 @@ const Services = () => {
                   <div>
                     <p className="productname"> {data.productname}</p>
                     <div className="universitycont">
-                      <p> {data.university}</p>
-                      <p>{data.uniabbreviation}</p>
+                      <p className="productuniversity"> {data.university}</p>
+                      <p className="productabbreviaton">{data.uniabbreviation}</p>
                     </div>
                   </div>
                 </div>
