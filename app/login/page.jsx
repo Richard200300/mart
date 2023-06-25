@@ -15,7 +15,7 @@ const Login = () => {
         </p>
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
-        <p>
+        <p className="forgotpassword">
           <Link href="/forgotpassword">Forgot Password</Link>
         </p>
         <div className="signin-btn">Sign in</div>

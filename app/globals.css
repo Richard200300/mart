@@ -429,12 +429,24 @@ html {
   font-weight: 600;
   color: white;
   font-size: 14px;
+  cursor: pointer;
   padding: 8px 10px;
-  border-radius: 9px;
+  border-radius: 7px;
 }
 .mainloginifo input {
   width: 100%;
-  margin-block: 10px;
+  margin-block: 12px;
+  padding-block: 5px;
+  border-bottom: 1px solid ;
+  color:rgba(0, 0, 0, 0.29);
+  outline: none;
+}
+.forgotpassword {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #3300ff;
 }
 .loginimg {
   flex-basis: 65%;
@@ -451,10 +463,13 @@ html {
 }
 .link-text {
   font-size: 14px;
+  margin-bottom:30px;
+  color:rgba(0, 0, 0, 0.4);
 }
 .su-link {
   color:#3300ff;
   margin-left: 10px;
+  font-weight: 600;
   text-decoration: none;
 }
 @media (max-width: 850px) {
