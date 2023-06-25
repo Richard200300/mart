@@ -414,10 +414,18 @@ html {
 
 }
 .logininfo {
+  position: relative;
   flex-basis: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.signuplogo {
+  position: absolute;
+  top: 20px;
+  left: 9%;
+  width: 170px;
+
 }
 .mainloginifo {
   max-width: 40vw;
