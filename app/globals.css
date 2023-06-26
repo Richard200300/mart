@@ -411,7 +411,6 @@ html {
 .loginpage {
   display: flex;
   font-family: sans-serif;
-
 }
 .logininfo {
   position: relative;
@@ -425,13 +424,12 @@ html {
   top: 20px;
   left: 9%;
   width: 170px;
-
 }
 .mainloginifo {
   max-width: 40vw;
 }
 .signin-btn {
-  background-color:#3300ff;
+  background-color: #3300ff;
   text-align: center;
   width: 100%;
   font-weight: 600;
@@ -445,8 +443,8 @@ html {
   width: 100%;
   margin-block: 12px;
   padding-block: 5px;
-  border-bottom: 1px solid ;
-  color:rgba(0, 0, 0, 0.29);
+  border-bottom: 1px solid;
+  color: rgba(0, 0, 0, 0.29);
   outline: none;
 }
 .forgotpassword {
@@ -471,11 +469,11 @@ html {
 }
 .link-text {
   font-size: 14px;
-  margin-bottom:30px;
-  color:rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.4);
 }
 .su-link {
-  color:#3300ff;
+  color: #3300ff;
   margin-left: 10px;
   font-weight: 600;
   text-decoration: none;
@@ -485,19 +483,20 @@ html {
 }
 .signupform input {
   width: 100%;
-  padding:3px 10px;
-  border-radius: 3px;
+  padding: 8px 16px;
+  border-radius: 7px;
   outline: none;
-  margin-block: 5px;
+  margin-block: 6px;
   background-color: #f3f3f4;
 }
 .signupform label {
   color: #0d0c22;
-  margin-block: 10px;
+  margin-block: 15px;
 }
 .Su-si-text {
   font-size: 32px;
-  color:#0d0c22;
+  color: #0d0c22;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 .signup-name-flex {
@@ -513,12 +512,11 @@ html {
 
 .mainuser-img-cont {
   flex-basis: 40%;
-  
 }
 .mainuser-img {
   height: 100vh;
-object-fit: cover;
-object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .user-info-cont {
@@ -535,31 +533,66 @@ object-position: center;
   display: flex;
   align-items: center;
   gap: 10px;
-  color:#0d0c22;
+  color: #0d0c22;
   font-size: 14px;
 }
 .input-text {
   font-size: 15px;
-  color:#0d0c22;
+  color: #0d0c22;
   font-weight: 600;
 }
 .forgot-password {
   font-size: 14px;
-color:#3300ff;
-font-weight: 600;
-cursor: pointer;
+  color: #3300ff;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
 }
 .switch-btn-component {
   font-weight: 600;
-  color:#0d0c22;
+  color: #0d0c22;
   cursor: pointer;
   background-color: #f3f3f4;
   font-size: 14px;
   padding: 10px 16px;
   border-radius: 8px;
-
-
 }
+.suname,
+.siemail,
+.sipassword,
+.suusername,
+.suemail,
+.supassword {
+  transition: all 0.3s ease-in-out;
+}
+.suname:hover,
+.suusername:focus,
+.suusername:hover,
+.suname:focus,
+.suemail:focus,
+.suemail:hover,
+.supassword:hover,
+.supassword:focus,
+.siemail:hover,
+.siemail:focus,
+.sipassword:focus,
+.sipassword:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(51, 0, 255, 0.425);
+}
+.create-account-btn {
+  background-color: #3300ff;
+  width: 35%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
 @media (max-width: 850px) {
   .nav-input-search-cont {
     display: none;
