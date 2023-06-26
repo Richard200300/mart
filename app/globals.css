@@ -480,6 +480,86 @@ html {
   font-weight: 600;
   text-decoration: none;
 }
+.signupform {
+  max-width: 30vw;
+}
+.signupform input {
+  width: 100%;
+  padding:3px 10px;
+  border-radius: 3px;
+  outline: none;
+  margin-block: 5px;
+  background-color: #f3f3f4;
+}
+.signupform label {
+  color: #0d0c22;
+  margin-block: 10px;
+}
+.Su-si-text {
+  font-size: 32px;
+  color:#0d0c22;
+  font-weight: 600;
+}
+.signup-name-flex {
+  display: flex;
+  gap: 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-user-login {
+  font-family: sans-serif;
+  display: flex;
+}
+
+.mainuser-img-cont {
+  flex-basis: 40%;
+  
+}
+.mainuser-img {
+  height: 100vh;
+object-fit: cover;
+object-position: center;
+}
+
+.user-info-cont {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.switch-user-info {
+  position: absolute;
+  top: 30px;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:#0d0c22;
+  font-size: 14px;
+}
+.input-text {
+  font-size: 15px;
+  color:#0d0c22;
+  font-weight: 600;
+}
+.forgot-password {
+  font-size: 14px;
+color:#3300ff;
+font-weight: 600;
+cursor: pointer;
+}
+.switch-btn-component {
+  font-weight: 600;
+  color:#0d0c22;
+  cursor: pointer;
+  background-color: #f3f3f4;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 8px;
+
+
+}
 @media (max-width: 850px) {
   .nav-input-search-cont {
     display: none;
