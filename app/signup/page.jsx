@@ -3,6 +3,7 @@ import { useState } from "react";
 import Signin from "@/component/signin";
 import Signupcomponent from "@/component/signup";
 import Signinimg from "../../public/assets/images/uni.jpg";
+import Unimart from "../../public/assets/svgicons/unimart.svg";
 import Image from "next/image";
 const Signup = () => {
   const [togSignin, setTogSignin] = useState(true);
@@ -12,6 +13,8 @@ const Signup = () => {
         <Image src={Signinimg} alt={Signinimg} className="mainuser-img"/>
       </div>
       <div className="user-info-cont">
+      <Image src={Unimart} alt={Unimart} className="signuplogo" />
+
         <div className="">
         <h2 className="Su-si-text">{togSignin ? "Sign up" : "Sign in"}</h2>
         {togSignin ? <Signupcomponent /> : <Signin />}
