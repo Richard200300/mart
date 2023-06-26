@@ -594,8 +594,32 @@ html {
   cursor: pointer;
   border-radius: 9px;
 }
-
-@media (max-width: 850px) {
+@media (max-height: 500px) {
+  .user-info-cont {
+    margin-block: 50px;
+    height: unset;
+    flex-direction: column;
+  }
+  .signuplogo {
+   position: unset;
+   margin-right: auto;
+   margin-top: 30px;
+   margin-left: 10%;
+   
+  }
+  .switch-user-info {
+    position: unset;
+    gap: 5px;
+    margin: unset;
+    padding-top: 20px;
+  }
+  .switch-btn-component {
+    padding: unset;
+        background: transparent;
+        color:#3300ff;
+      }
+}
+@media (max-width: 920px) {
   .nav-input-search-cont {
     display: none;
   }
@@ -609,7 +633,7 @@ html {
   height: 100vh;
   flex-basis: unset;
   width: unset;
-  
+  flex-direction: column;
 }
 .signupform {
   max-width: unset;
@@ -618,14 +642,7 @@ html {
 .create-account-btn {
   width: 100%;
 }
-.switch-user-info {
-  top: unset;
-  bottom: 12%;
-  right: unset;
-  margin: 0px auto;
-  
-}
-  .nav-input-search-cont1 {
+.nav-input-search-cont1 {
     margin-top: 10px;
     display: block;
   }
@@ -658,9 +675,11 @@ html {
   .herosellcont {
     margin-bottom: 10px;
   }
-  .signuplogo {
-    display: block;
-  }
+ .signuplogo {
+  display: block;
+ }
+
+ 
 }
 @media (max-width: 500px) {
   .hero-container {
@@ -728,4 +747,21 @@ html {
   .signup-name-flex {
     display: block;
   }
+  .signuplogo {
+  
+    position: unset;
+    margin-bottom: 15%;
+    margin-right: auto;
+    margin-left: 5%;
+  }
+  .switch-user-info {
+    gap: 5px;
+    position: unset;
+    padding-top: 20px;
+  }
+  .switch-btn-component {
+    padding: unset;
+        background: transparent;
+        color:#3300ff;
+      }
 }
