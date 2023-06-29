@@ -581,7 +581,19 @@ html {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(51, 0, 255, 0.425);
 }
-
+.suusername:focus,
+.suname:focus,
+.suemail:focus,
+.supassword:focus,
+.siemail:focus,
+.sipassword:focus {
+  border: 1px solid rgba(51, 0, 255, 0.582);
+}
+.err-msg {
+  box-shadow: 0px 0px 10px rgba(255, 82, 8, 0.911);
+  border: 1px solid rgba(255, 82, 8, 0.938);
+  background-color: #ffffff;
+}
 .create-account-btn {
   background-color: #3300ff;
   width: 45%;
@@ -601,11 +613,10 @@ html {
     flex-direction: column;
   }
   .signuplogo {
-   position: unset;
-   margin-right: auto;
-   margin-top: 30px;
-   margin-left: 10%;
-   
+    position: unset;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-left: 10%;
   }
   .switch-user-info {
     position: unset;
@@ -615,34 +626,34 @@ html {
   }
   .switch-btn-component {
     padding: unset;
-        background: transparent;
-        color:#3300ff;
-      }
+    background: transparent;
+    color: #3300ff;
+  }
 }
 @media (max-width: 920px) {
   .nav-input-search-cont {
     display: none;
   }
-.main-user-login {
-  display: block;
-}
-.mainuser-img-cont {
-  display: none;
-}
-.user-info-cont {
-  height: 100vh;
-  flex-basis: unset;
-  width: unset;
-  flex-direction: column;
-}
-.signupform {
-  max-width: unset;
-  max-width: 60vw;
-}
-.create-account-btn {
-  width: 100%;
-}
-.nav-input-search-cont1 {
+  .main-user-login {
+    display: block;
+  }
+  .mainuser-img-cont {
+    display: none;
+  }
+  .user-info-cont {
+    height: 100vh;
+    flex-basis: unset;
+    width: unset;
+    flex-direction: column;
+  }
+  .signupform {
+    max-width: unset;
+    max-width: 60vw;
+  }
+  .create-account-btn {
+    width: 100%;
+  }
+  .nav-input-search-cont1 {
     margin-top: 10px;
     display: block;
   }
@@ -675,11 +686,9 @@ html {
   .herosellcont {
     margin-bottom: 10px;
   }
- .signuplogo {
-  display: block;
- }
-
- 
+  .signuplogo {
+    display: block;
+  }
 }
 @media (max-width: 500px) {
   .hero-container {
@@ -748,7 +757,6 @@ html {
     display: block;
   }
   .signuplogo {
-  
     position: unset;
     margin-bottom: 15%;
     margin-right: auto;
@@ -761,7 +769,7 @@ html {
   }
   .switch-btn-component {
     padding: unset;
-        background: transparent;
-        color:#3300ff;
-      }
+    background: transparent;
+    color: #3300ff;
+  }
 }
